@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard games</title>
+    <!-- daisy ui and tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- poppins font and anta font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Play:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/keyboard.jpg" type="image/x-icon">
+    <style>
+        .font-anton {
+            font-family: "Anton", sans-serif;
+        }
+    </style>
+
+
+<body class="  font-family: Poppins;">
+
+    <main class="bg-[url(./images/background.png)] bg-center bg-no-repeat bg-[#1E1E1E] 
+    min-h-screen">
+        <div class="container max-w-[95%] mx-auto">
+            <!-- ALPHABET section -->
+            <section id="alfabate-section" class=" min-h-screen  items-center flex justify-center ">
+                <div class="text-center">
+                    <h1 class="font-anton text-5xl md:text-[120px] lg:text-[170px] text-white">ALPHABET CLASH</h1>
+                    <p class="text-2xl font-medium text-white pt-8 pb-10 md:pb-16">Unleash Your Keyboard Kung Fu : Press
+                        “Enter” to Play</p>
+                    <button id="alfabate-button" class="btn text-2xl font-semibold  px-5 border-2 border-green-400">Play Now</button>
+                </div>
+            </section>
+
+            <!-- main keyboard games-->
+
+            <section id="keyboard-section" class="flex flex-col justify-center items-center gap-14 hidden">
+                <!-- display -->
+                <div
+                    class="  h-60 md:h-72 w-[90%] mt-20 rounded-2xl bg-[#ffffffb3] phone-6 border-[20px] border-[#010313cc] ">
+                    <div class="flex justify-center mx-2 md:mx-0">
+                        <p
+                            class="font-medium text-center text-sm md:text-xl px-6 pb-4 rounded-b-2xl bg-[#010313] text-white ">
+                            Don't watch keyboard while playing...</p>
+                    </div>
+                    <h3 class=" text-6xl mt-10 md:mt-4 md:text-9xl text-white flex justify-center items-center font-bold uppercase"
+                        style="text-shadow: 1px 1px 5px #000;"><span id="gamedispay">Y</span></h3>
+                </div>
+
+                <!-- keyboard -->
+                <div class="">
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd id="q" class="kbd">q</kbd>
+                        <kbd id="w" class="kbd">w</kbd>
+                        <kbd id="e" class="kbd">e</kbd>
+                        <kbd id="r" class="kbd">r</kbd>
+                        <kbd id="t" class="kbd">t</kbd>
+                        <kbd id="y" class="kbd">y</kbd>
+                        <kbd id="u" class="kbd">u</kbd>
+                        <kbd id="i" class="kbd">i</kbd>
+                        <kbd id="o" class="kbd">o</kbd>
+                        <kbd id="p" class="kbd">p</kbd>
+                    </div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd id="a" class="kbd">a</kbd>
+                        <kbd id="s" class="kbd">s</kbd>
+                        <kbd id="d" class="kbd">d</kbd>
+                        <kbd id="f" class="kbd">f</kbd>
+                        <kbd id="g" class="kbd">g</kbd>
+                        <kbd id="h" class="kbd">h</kbd>
+                        <kbd id="j" class="kbd">j</kbd>
+                        <kbd id="k" class="kbd">k</kbd>
+                        <kbd id="l" class="kbd">l</kbd>
+                     </div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd id="z" class="kbd">z</kbd>
+                        <kbd id="x" class="kbd">x</kbd>
+                        <kbd id="c" class="kbd">c</kbd>
+                        <kbd id="v" class="kbd">v</kbd>
+                        <kbd id="b" class="kbd">b</kbd>
+                        <kbd id="n" class="kbd">n</kbd>
+                        <kbd id="m" class="kbd">m</kbd>
+                        <kbd id="/" class="kbd">/</kbd>
+                    </div>
+                </div>
+                <!-- buttons -->
+                <div class="flex justify-between w-full">
+                    <button id="love-button"
+                        class="btn text-white text-xl font-medium  bg-gradient-to-r from-[#894189a8] to-pink-700  px-10  rounded-full">Life<img
+                            src="./images/love.png" alt=""> <span id="increment-dis">0</span></button>
+                    <button
+                        class="btn text-white text-xl font-medium  bg-gradient-to-r from-[#360490] to-green-800  px-10  rounded-full">Life<img
+                            src="./images/dolar.png" alt=""> <span>0</span></button>
+
+                </div>
+            </section>
+
+            <!-- final section -->
+
+            <section class="flex justify-center items-center min-h-screen hidden">
+                <div class="flex flex-col gap-7 text-center bg-[#ffffff61] p-10 rounded-xl shadow-2xl">
+                    <h2 class=" text-4xl md:text-6xl text-white font-bold">Score : 14</h2>
+                    <button  class="btn m-auto w-[70%] px-6 text-xl md:text-2xl font-semibold">Play Now</button>
+                    <p class="text-xl text-white font-medium">Practice will make you Pro</p>
+
+                </div>
+
+            </section>
+
+
+
+            <script src="index.js"></script>
+            <script src="sub.js"></script>
+
+
+        </div>
+    </main>
+    <img src="" alt="">
+
+
+</body>
+
+</html>
