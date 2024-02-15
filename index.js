@@ -11,6 +11,8 @@ const newfinalScore = document.getElementById('set-new-and-final-csore');
 
 
 
+
+
 function sectionOpen(item) {
     const element = document.getElementById(item);
     element.classList.remove('hidden')
@@ -63,9 +65,18 @@ function keyboardButtons(event) {
         newfinalScore.innerText = newNumber;
         // relod ba contenue
         gameTime();
+        // buttons bd remove
         removeBackgroundColor(displayToLowercase);
 
+        const adEdit = document.getElementById('ad-edit');
+        if (newNumber >= 0 && newNumber < 10) {
+            adEdit.innerText = 'Your score is bad! please Improve';
+        }
+        else if (newNumber <= 10) {
+            adEdit.innerText = 'Your score is good';
+        }
     }
+
 
     else {
         const lifeButtons = lifeDisplay.innerText;
@@ -73,19 +84,13 @@ function keyboardButtons(event) {
         // new life
         const newlife = lifeButtonDisplay - 1;
         lifeDisplay.innerText = newlife;
-        if(newlife === 0){
+        if (newlife === 0) {
 
             sectionOpen('final-score');
             sectionHidden('alfabate-section');
             sectionHidden('keyboard-section');
             removeBackgroundColor(displayToLowercase);
-           
 
-            // const gamedispays = document.getElementById('gamedispay');
-            // gamedispays.addEventListener(function()){
-                
-            // }
-            
         }
     }
 

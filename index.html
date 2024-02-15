@@ -18,7 +18,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/keyboard.jpg" type="image/x-icon">
     <style>
@@ -36,10 +39,12 @@
             <!-- ALPHABET section -->
             <section id="alfabate-section" class=" min-h-screen  items-center flex justify-center ">
                 <div class="text-center">
-                    <h1 class="font-anton text-5xl md:text-[120px] lg:text-[170px] text-white">ALPHABET CLASH</h1>
+                    <h1 class="font-anton text-5xl md:text-[120px] lg:text-[170px] text-white"
+                        style="text-shadow: 1px 1px 20px #8ba25fba;">ALPHABET CLASH</h1>
                     <p class="text-2xl font-medium text-white pt-8 pb-10 md:pb-16">Unleash Your Keyboard Kung Fu : Press
                         “Enter” to Play</p>
-                    <button id="alfabate-button" class="btn text-2xl font-semibold  px-5 border-2 border-green-400">Play Now</button>
+                    <button id="alfabate-button" class="btn   text-2xl font-semibold  px-5 border-[2px] border-black"
+                        style="box-shadow: 1px 1px 20px rgb(169, 193, 164);"><i class="fa-solid fa-repeat"></i>Play Now</button>
                 </div>
             </section>
 
@@ -47,15 +52,16 @@
 
             <section id="keyboard-section" class="flex flex-col justify-center items-center gap-14 hidden">
                 <!-- display -->
-                <div
-                    class="  h-60 md:h-72 w-[90%] mt-20 rounded-2xl bg-[#ffffffb3] phone-6 border-[20px] border-[#010313cc] ">
+                <div class="  h-60 md:h-72 w-[90%] mt-20 rounded-2xl bg-[#ffffffb3] phone-6 border-[20px] border-[#010313cc]"
+                    style="box-shadow: 1px 1px 5px rgb(255, 255, 255);">
                     <div class="flex justify-center mx-2 md:mx-0">
                         <p
                             class="font-medium text-center text-sm md:text-xl px-6 pb-4 rounded-b-2xl bg-[#010313] text-white ">
                             Don't watch keyboard while playing...</p>
                     </div>
-                    <h3 id="gamedispay" class=" text-6xl mt-10 md:mt-4 md:text-9xl text-white flex justify-center items-center font-bold uppercase"
-                        style="text-shadow: 1px 1px 5px #000;"><span >Y</span></h3>
+                    <h3 id="gamedispay"
+                        class=" text-6xl mt-10 md:mt-4 md:text-9xl text-white flex justify-center items-center font-bold uppercase"
+                        style="text-shadow: 1px 1px 5px #000;"><span>Y</span></h3>
                 </div>
 
                 <!-- keyboard -->
@@ -82,7 +88,7 @@
                         <kbd id="j" class="kbd">j</kbd>
                         <kbd id="k" class="kbd">k</kbd>
                         <kbd id="l" class="kbd">l</kbd>
-                     </div>
+                    </div>
                     <div class="flex justify-center gap-1 my-1 w-full">
                         <kbd id="z" class="kbd">z</kbd>
                         <kbd id="x" class="kbd">x</kbd>
@@ -97,11 +103,13 @@
                 <!-- buttons -->
                 <div class="flex justify-between w-full">
                     <button id="life-button"
-                        class="btn text-white text-xl font-medium  bg-gradient-to-r from-[#894189a8] to-pink-700  px-10  rounded-full">Life<img
-                            src="./images/love.png" alt=""> <span id="life-display">5</span></button>
+                        class="btn text-white text-xl font-medium  bg-gradient-to-r from-[#894189a8] to-pink-700  px-10  rounded-full  border-[2px] border-black"
+                        style="box-shadow: 1px 1px 20px rgb(169, 193, 164);">Life<img src="./images/love.png" alt="">
+                        <span id="life-display">5</span></button>
                     <button
-                        class="btn text-white text-xl font-medium  bg-gradient-to-r from-[#360490] to-green-800  px-10  rounded-full">Score<img
-                            src="./images/dolar.png" alt=""> <span id="increment-dis">0</span></button>
+                        class="btn text-white text-xl font-medium  bg-gradient-to-r from-[#360490] to-green-800  px-10  rounded-full border-[2px] border-black"
+                        style="box-shadow: 1px 1px 20px rgb(169, 193, 164);">Score<img src="./images/dolar.png" alt="">
+                        <span id="increment-dis" class="drop-shadow-2xl">0</span></button>
 
                 </div>
             </section>
@@ -109,9 +117,16 @@
             <!-- final section -->
 
             <section id="final-score" class="flex justify-center items-center min-h-screen hidden">
-                <div  class="flex flex-col gap-7 text-center bg-[#ffffff61] p-10 rounded-xl shadow-2xl">
-                    <h2 class=" text-4xl md:text-6xl text-white font-bold">Score : <span id="set-new-and-final-csore">0</span></h2>
-                    <button id="final-score-button"  class="btn m-auto w-[70%] px-6 text-xl md:text-2xl font-semibold">Play Now</button>
+                <div class="flex flex-col gap-7 text-center bg-[#ffffff61] p-10 rounded-xl shadow-2xl"
+                    style="box-shadow: 1px 1px 10px #000;">
+                    <div class="border-[5px] p-2 shadow-2xl border-[#fff] rounded-xl">
+                        <p id="ad-edit" class="text-xl font-semibold  text-white ">your score</p>
+                    </div>
+                    <h2 class=" text-4xl md:text-6xl text-white font-bold " style="text-shadow: 1px 1px 50px #000;">
+                        Score : <span id="set-new-and-final-csore">0</span></h2>
+                    <button id="final-score-button"
+                        class="btn m-auto w-[70%] px-6 text-xl md:text-2xl font-semibold border-[2px] border-black"
+                        style="box-shadow: 1px 1px 20px rgb(169, 193, 164);"><i class="fa-solid fa-repeat"></i>Play Now</button>
                     <p class="text-xl text-white font-medium">Practice will make you Pro</p>
 
                 </div>
@@ -123,17 +138,18 @@
         </div>
     </main>
 
-    
+
 
     <footer class="footer footer-center p-4 bg-base-300 text-base-content mt-40 sticky bottom-0">
         <aside>
-          <p class="items-center">Copyright © 2024 - All right reserved by ACME Industries Ltd designer by <span class="text-xl font-extrabold uppercase text-yellow-800">SUJON</span></p>
+            <p class="items-center">Copyright © 2024 - All right reserved by ACME Industries Ltd designer by <span
+                    class="text-xl font-extrabold uppercase text-yellow-800">SUJON</span><a href="https://www.facebook.com/profile.php?id=100088142062918"><i class="fa-brands text-3xl borber-[10px] text-[#0866FF] border-yellow-500 p-3 text-black ml-4 fa-facebook"></i></a></p>
         </aside>
-      </footer>
+    </footer>
 
 
-      <script src="index.js"></script>
-      <script src="sub.js"></script>
+    <script src="index.js"></script>
+    <script src="sub.js"></script>
 
 </body>
 
