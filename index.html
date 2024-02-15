@@ -54,8 +54,8 @@
                             class="font-medium text-center text-sm md:text-xl px-6 pb-4 rounded-b-2xl bg-[#010313] text-white ">
                             Don't watch keyboard while playing...</p>
                     </div>
-                    <h3 class=" text-6xl mt-10 md:mt-4 md:text-9xl text-white flex justify-center items-center font-bold uppercase"
-                        style="text-shadow: 1px 1px 5px #000;"><span id="gamedispay">Y</span></h3>
+                    <h3 id="gamedispay" class=" text-6xl mt-10 md:mt-4 md:text-9xl text-white flex justify-center items-center font-bold uppercase"
+                        style="text-shadow: 1px 1px 5px #000;"><span >Y</span></h3>
                 </div>
 
                 <!-- keyboard -->
@@ -96,22 +96,22 @@
                 </div>
                 <!-- buttons -->
                 <div class="flex justify-between w-full">
-                    <button id="love-button"
+                    <button id="life-button"
                         class="btn text-white text-xl font-medium  bg-gradient-to-r from-[#894189a8] to-pink-700  px-10  rounded-full">Life<img
-                            src="./images/love.png" alt=""> <span id="increment-dis">0</span></button>
+                            src="./images/love.png" alt=""> <span id="life-display">5</span></button>
                     <button
-                        class="btn text-white text-xl font-medium  bg-gradient-to-r from-[#360490] to-green-800  px-10  rounded-full">Life<img
-                            src="./images/dolar.png" alt=""> <span>0</span></button>
+                        class="btn text-white text-xl font-medium  bg-gradient-to-r from-[#360490] to-green-800  px-10  rounded-full">Score<img
+                            src="./images/dolar.png" alt=""> <span id="increment-dis">0</span></button>
 
                 </div>
             </section>
 
             <!-- final section -->
 
-            <section class="flex justify-center items-center min-h-screen hidden">
-                <div class="flex flex-col gap-7 text-center bg-[#ffffff61] p-10 rounded-xl shadow-2xl">
-                    <h2 class=" text-4xl md:text-6xl text-white font-bold">Score : 14</h2>
-                    <button  class="btn m-auto w-[70%] px-6 text-xl md:text-2xl font-semibold">Play Now</button>
+            <section id="final-score" class="flex justify-center items-center min-h-screen hidden">
+                <div  class="flex flex-col gap-7 text-center bg-[#ffffff61] p-10 rounded-xl shadow-2xl">
+                    <h2 class=" text-4xl md:text-6xl text-white font-bold">Score : <span id="set-new-and-final-csore">0</span></h2>
+                    <button id="final-score-button"  class="btn m-auto w-[70%] px-6 text-xl md:text-2xl font-semibold">Play Now</button>
                     <p class="text-xl text-white font-medium">Practice will make you Pro</p>
 
                 </div>
